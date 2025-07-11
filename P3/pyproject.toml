@@ -1,0 +1,15 @@
+[project]
+name = "P3"
+version = "0.1.0"
+description = "Gestion de Redes Semanticas"
+authors = [{name = "Mario Lopez Diaz"}]
+requires-python = ">=3.8"
+
+# Dependencias del proyecto
+dependencies = [
+    "click",
+    "black",
+    "uvicorn",
+    "matplotlib",
+    "networkx"
+]

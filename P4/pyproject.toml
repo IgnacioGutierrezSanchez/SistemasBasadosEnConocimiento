@@ -1,0 +1,12 @@
+[project]
+name = "sbc-g09-p4"
+version = "0.1.0"
+description = "Asistente virtual"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.7",
+    "black",
+    "ollama",
+    "uv"
+]

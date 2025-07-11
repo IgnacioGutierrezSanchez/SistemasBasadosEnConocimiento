@@ -1,0 +1,63 @@
+cd (ruta en la que se encuentre el directorio P3)
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+uv run main.py
+
+Ejemplo de Ejecución para RedLaboral.txt
+
+// Muestra los comandos disponibles
+help
+
+// Carga la base de conocimiento RedProfesional.txt
+load data/RedLaboral.txt
+
+// Obtener los nombres y roles de las personas que trabajan en el proyecto1
+select ?nombre, ?rol where { ?persona wdt:P31 q9:empleado . ?persona t9:trabajaEn q9:proyecto1 . ?persona wdt:P106 ?rol . ?persona t9:nombre ?nombre .}
+Resultado esperado:
+?nombre           | ?rol
+Laura Perez       | desarrollador
+Carlos Sanchez    | gestorProyectos
+Manuel Garcia     | analista
+Pedro Martinez    | disenador
+
+// Obtener la descripción y las fechas de los proyectos
+select ?proyecto, ?descripcion, ?fechaInicio, ?fechaFin where { ?proyecto wdt:P31 q9:proyecto . ?proyecto t9:descripcion ?descripcion . ?proyecto t9:fechaInicio ?fechaInicio . ?proyecto t9:fechaFin ?fechaFin .}
+Resultado esperado:
+?proyecto  | ?descripcion                                         		| ?fechaInicio  | ?fechaFin
+proyecto1  | Desarrollo de sistema de gestión de inventarios      		| 2023-01-10    | 2023-06-15
+proyecto2  | Análisis de mercado y diseño gráfico de campañas     		| 2023-02-01    | 2023-09-30
+proyecto3  | Consultoría en optimización de procesos              		| 2023-03-15    | 2023-12-20
+proyecto4  | Integracion de sistemas de TI              			    | 2023-07-01    | 2024-02-15
+proyecto5  | Desarrollo de plataforma de comercio electrónico			| 2023-09-01    | 2024-05-30
+
+
+// Obtener las tareas que requieren habilidades relacionadas con q9:programacion
+query select ?tarea, ?descripcion where { ?tarea wdt:P31 q9:tarea . ?tarea t9:requiereHabilidad q9:programacion . ?tarea t9:descripcion ?descripcion .}
+Resultado esperado:
+?tarea    | ?descripcion
+tarea1    | Desarrollo de funcionalidades backend
+tarea6    | Desarrollo de aplicaciones frontend
+
+// Dibuja el grafo representativo de los proyectos y sus componentes
+draw
+
+//Muestra la base de datos cargada y el numero de lineas
+show
+
+// Agregar una nueva tripleta: persona6 está trabajando en el proyecto3
+add q9:persona6 t9:trabajaEn q9:proyecto3
+
+//Muestra la base de datos cargada y el numero de lineas, se puede ver como se ha agregado correctamente la tripleta
+show
+
+// Guardar la base de conocimiento en un nuevo archivo
+save nueva_red_profesional.txt
+
+//Devuelve el numero de lineas(sin comentarios de un archivo), para observar que se guarda correctamente
+contar nueva_red_academica.txt
+
+// Sale del programa
+exit

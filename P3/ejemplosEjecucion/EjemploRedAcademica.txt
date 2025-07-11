@@ -1,0 +1,95 @@
+cd (ruta en la que se encuentre el directorio P3)
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+uv run main.py
+
+Ejemplo de Ejecución para RedAcademica.txt
+
+//Muestra los comandos disponibles a usar
+help
+
+//Carga la base de conocimiento RedAcademica.txt
+load data/RedAcademica.txt
+
+//Muestra la base de datos cargada y el numero de lineas
+show
+
+//Obtener los nombres de los estudiantes matriculados en la asignatura q9:SBC
+select ?nombre where { ?estudiante t9:matriculado q9:SBC . ?estudiante t9:nombre ?nombre . }
+Resultado esperado: 
+?nombre
+Juan Perez 
+Ana Gomez
+Luis Fernandez
+Sofia Morales
+Laura Sanchez
+
+//Obtener los profesores y sus especialidades para cada asignatura
+select ?nombre, ?especialidad where { ?profesor t9:nombre ?nombre . ?profesor t9:imparte ?asignatura . ?profesor t9:especialidad ?especialidad . }
+Resultado esperado: 
+?nombre         | ?especialidad 
+Dra. Martinez 	| matematicas
+Dr. Gomez 	    | historia
+Prof. Hernandez | ingles
+Ing. Jimenez 	| computacion
+Dr. Ortiz 	    | física
+Dr. Perez 	    | algoritmos
+Dr. Morales 	| psicologiacognitiva
+Dra. Alvarez 	| biologiamolecular
+
+//Obtener asignaturas y créditos asociados
+select ?asignatura, ?creditos where { ?asignatura t9:creditos ?creditos . }
+Resultado esperado:
+?asignatura 	| ?creditos
+SBC	    	    | 3
+MTH101		    | 4
+HIS202 		    | 3
+ENG103 		    | 2
+CSC205 		    | 3
+PHY301 		    | 4
+CSC301 		    | 3
+PSY201 		    | 3
+BIO301 		    | 4
+	
+//Dibuja el grafo representativo de la consulta anterior, para volver al ciclo de ejecución hay que cerrar el grafo que se ha abierto
+draw
+
+// Obtener los nombres de los profesores que imparten materias de q9:cienciasExactas
+select ?nombre where { ?materia wdt:P279 q9:cienciasExactas . ?profesor t9:especialidad ?materia . ?profesor t9:nombre ?nombre . }
+Resultado esperado:
+?nombre
+Dra. Martinez
+Ing. Jimenez
+
+Ejemplo de Ejecución para propiedad de equivalencia
+
+//Consulta para Obtener Estudiantes Matriculados en MTH101(tanto los estudiantes con la propiedad t9:matriculados como t9:participante en MTH101 deberían salir):
+query select ?nombre where { ?estudiante t9:matriculado q9:MTH101 . ?estudiante t9:nombre ?nombre . }
+Resultado Esperado:
+?nombre
+Juan Perez
+Luis Fernandez
+Carlos Ruiz 
+Diego Martin
+Laura Sanchez
+
+//Muestra la base de datos cargada y el numero de lineas
+show
+
+//Agregar una nueva tripleta: estudiante1 está matriculado en la asignatura q9:BIO101
+add q9:estudiante1 t9:matriculado q9:BIO101
+
+//Muestra la base de datos cargada y el numero de lineas, se puede ver como se ha agregado correctamente la tripleta
+show
+
+//Guardar la base de conocimiento en un nuevo archivo
+save nueva_red_academica.txt
+
+//Devuelve el numero de lineas(sin comentarios de un archivo), para observar que se guarda correctamente
+contar nueva_red_academica.txt
+
+//Sale del programa
+exit

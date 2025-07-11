@@ -1,0 +1,556 @@
+# === Estudiantes ===
+# Cada estudiante es identificado con un URI único y descrito por sus atributos (nombre, cursos matriculados, etc.).
+
+# Estudiante 1: Juan Perez
+# Juan Perez es un estudiante.
+# Instancia de estudiante
+q9:estudiante1 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Introducción a la Computación Básica
+q9:estudiante1 t9:matriculado q9:SBC . 
+# Cálculo Diferencial e Integral
+q9:estudiante1 t9:matriculado q9:MTH101 . 
+# Historia Mundial desde el siglo XX
+q9:estudiante1 t9:participante q9:HIS202 . 
+# Estructuras de Datos y Algoritmos
+q9:estudiante1 t9:matriculado q9:CSC205 . 
+
+# Nombre del estudiante.
+q9:estudiante1 t9:nombre "Juan Perez" . 
+
+# Afiliación a la universidad
+q9:estudiante1 wdt:P102 q9:universidadZ .
+
+# Estudiante 2: Ana Gomez
+# Ana Gomez es un estudiante.
+q9:estudiante2 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Introducción a la Computación Básica
+q9:estudiante2 t9:matriculado q9:SBC . 
+# Inglés Intermedio
+q9:estudiante2 t9:participante q9:ENG103 . 
+# Estructuras de Datos y Algoritmos
+q9:estudiante2 t9:matriculado q9:CSC205 . 
+
+# Nombre del estudiante.
+q9:estudiante2 t9:nombre "Ana Gomez" . 
+
+# Afiliación a la universidad
+q9:estudiante2 wdt:P102 q9:universidadX .
+
+# Estudiante 3: Luis Fernandez
+# Luis Fernandez es un estudiante.
+q9:estudiante3 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Física Moderna
+q9:estudiante3 t9:participante q9:PHY301 . 
+# Cálculo Diferencial e Integral
+q9:estudiante3 t9:matriculado q9:MTH101 . 
+# Introducción a la Computación Básica
+q9:estudiante3 t9:matriculado q9:SBC . 
+
+# Nombre del estudiante.
+q9:estudiante3 t9:nombre "Luis Fernandez" . 
+
+# Afiliación a la universidad
+q9:estudiante3 wdt:P102 q9:universidadY .
+
+# Estudiante 4: Maria Torres
+# Maria Torres es un estudiante.
+q9:estudiante4 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Historia Mundial desde el siglo XX
+q9:estudiante4 t9:matriculado q9:HIS202 . 
+# Inglés Intermedio
+q9:estudiante4 t9:matriculado q9:ENG103 . 
+# Física Moderna
+q9:estudiante4 t9:matriculado q9:PHY301 . 
+
+# Nombre del estudiante.
+q9:estudiante4 t9:nombre "Maria Torres" . 
+
+# Afiliación a la universidad
+q9:estudiante4 wdt:P102 q9:universidadX .
+
+# Estudiante 5: Carlos Ruiz
+# Carlos Ruiz es un estudiante.
+q9:estudiante5 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Cálculo Diferencial e Integral
+q9:estudiante5 t9:matriculado q9:MTH101 . 
+# Inglés Intermedio
+q9:estudiante5 t9:matriculado q9:ENG103 . 
+
+# Nombre del estudiante.
+q9:estudiante5 t9:nombre "Carlos Ruiz" . 
+
+# Afiliación a la universidad
+q9:estudiante5 wdt:P102 q9:universidadY .
+
+# Estudiante 6: Sofia Morales
+# Sofia Morales es un estudiante.
+q9:estudiante6 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Introducción a la Computación Básica
+q9:estudiante6 t9:matriculado q9:SBC . 
+# Cálculo II
+q9:estudiante6 t9:participante q9:MTH102 . 
+# Inglés Avanzado
+q9:estudiante6 t9:participante q9:ENG105 . 
+
+# Nombre del estudiante.
+q9:estudiante6 t9:nombre "Sofia Morales" . 
+
+# Afiliación a la universidad
+q9:estudiante6 wdt:P102 q9:universidadY .
+
+# Estudiante 7: Javier Perez
+# Javier Perez es un estudiante.
+q9:estudiante7 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Física Cuántica
+q9:estudiante7 t9:matriculado q9:PHY303 . 
+# Cálculo Vectorial
+q9:estudiante7 t9:matriculado q9:MTH103 . 
+# Inglés Básico
+q9:estudiante7 t9:matriculado q9:ENG102 . 
+
+# Nombre del estudiante.
+q9:estudiante7 t9:nombre "Javier Perez" . 
+
+# Afiliación a la universidad
+q9:estudiante7 wdt:P102 q9:universidadX .
+
+# Estudiante 8: Laura Sánchez
+# Laura Sánchez es un estudiante.
+q9:estudiante8 wdt:P31 q9:estudiante . 
+
+# Matriculada en varios cursos.
+# Introducción a la Computación Básica
+q9:estudiante8 t9:matriculado q9:SBC . 
+# Cálculo Diferencial e Integral
+q9:estudiante8 t9:participante q9:MTH101 . 
+# Inglés Intermedio
+q9:estudiante8 t9:matriculado q9:ENG103 . 
+
+# Nombre del estudiante.
+q9:estudiante8 t9:nombre "Laura Sanchez" . 
+
+# Afiliación a la universidad
+q9:estudiante8 wdt:P102 q9:universidadZ .
+
+# Estudiante 9: Diego Martín
+# Diego Martín es un estudiante.
+q9:estudiante9 wdt:P31 q9:estudiante . 
+
+# Matriculado en varios cursos.
+# Física Moderna
+q9:estudiante9 t9:matriculado q9:PHY301 . 
+# Cálculo Diferencial e Integral
+q9:estudiante9 t9:matriculado q9:MTH101 . 
+# Inglés Avanzado
+q9:estudiante9 t9:matriculado q9:ENG104 . 
+
+# Nombre del estudiante.
+q9:estudiante9 t9:nombre "Diego Martin" . 
+
+# Afiliación a la universidad
+q9:estudiante9 wdt:P102 q9:universidadZ .
+
+# Estudiante 10: Elena Ruiz
+# Elena Ruiz es una estudiante.
+q9:estudiante10 wdt:P31 q9:estudiante . 
+
+# Matriculada en varios cursos.
+# Historia Mundial desde el siglo XX
+q9:estudiante10 t9:matriculado q9:HIS202 . 
+# Inglés Avanzado
+q9:estudiante10 t9:matriculado q9:ENG105 . 
+# Estructuras de Datos y Algoritmos
+q9:estudiante10 t9:matriculado q9:CSC205 . 
+
+# Nombre del estudiante.
+q9:estudiante10 t9:nombre "Elena Ruiz" . 
+
+# Afiliación a la universidad
+q9:estudiante10 wdt:P102 q9:universidadX .
+
+# Relación con otros cursos
+# Curso adicional para Juan Perez
+q9:estudiante1 t9:participante q9:CSC101 . 
+# Curso adicional para Ana Gomez
+q9:estudiante2 t9:participante q9:ENG106 . 
+# Curso adicional para Luis Fernandez
+q9:estudiante3 t9:participante q9:PHY302 . 
+# Curso adicional para Maria Torres
+q9:estudiante4 t9:participante q9:MTH102 . 
+# Curso adicional para Carlos Ruiz
+q9:estudiante5 t9:participante q9:HIS101 .
+
+# === Propiedades ===
+# Relación de equivalencia entre propiedades (matriculado y participante son sinónimos en este contexto).
+# Las propiedades son equivalentes.
+t9:matriculado wdt:P1628 t9:participante .
+
+# === Asignaturas ===
+# Información detallada de cada asignatura, incluyendo créditos, descripción y profesor a cargo.
+
+# Asignatura: Introducción a la Computación Básica (SBC)
+# SBC es una asignatura.
+q9:SBC wdt:P31 q9:asignatura .
+# Impartida por Dr. Ramirez.
+q9:SBC t9:impartidaPor q9:profesor1 .
+# Pertenece a la categoría de materias.
+q9:SBC wdt:P279 q9:materia .
+# Créditos asignados: 3.
+q9:SBC t9:creditos "3" .
+# Descripción.
+q9:SBC t9:descripcion "Introduccion a la computacion basica y sistemas operativos" .
+# Subcategoría: Computación.
+q9:SBC wdt:P279 q9:computacion .
+# Tema principal: Computación.
+q9:SBC wdt:P921 q9:computacion .
+
+# Asignatura: Cálculo Diferencial e Integral (MTH101)
+# MTH101 es una asignatura.
+q9:MTH101 wdt:P31 q9:asignatura .
+# Impartida por Dra. Martinez.
+q9:MTH101 t9:impartidaPor q9:profesor2 .
+# Pertenece a la categoría de materias.
+q9:MTH101 wdt:P279 q9:materia .
+# Créditos asignados: 4.
+q9:MTH101 t9:creditos "4" .
+# Descripción.
+q9:MTH101 t9:descripcion "Calculo diferencial e integral" .
+# Subcategoría: Matemáticas.
+q9:MTH101 wdt:P279 q9:matematicas .
+# Tema principal: Matemáticas.
+q9:MTH101 wdt:P921 q9:matematicas .
+
+# Asignatura: Historia Mundial desde el siglo XX (HIS202)
+# HIS202 es una asignatura.
+q9:HIS202 wdt:P31 q9:asignatura .
+# Impartida por Dr. Gomez.
+q9:HIS202 t9:impartidaPor q9:profesor3 .
+# Pertenece a la categoría de materias.
+q9:HIS202 wdt:P279 q9:materia .
+# Créditos asignados: 3.
+q9:HIS202 t9:creditos "3" .
+# Descripción.
+q9:HIS202 t9:descripcion "Historia mundial desde el siglo XX" .
+# Subcategoría: Historia.
+q9:HIS202 wdt:P279 q9:historia .
+# Tema principal: Historia.
+q9:HIS202 wdt:P921 q9:historia .
+
+# Asignatura: Inglés Intermedio (ENG103)
+# ENG103 es una asignatura.
+q9:ENG103 wdt:P31 q9:asignatura .
+# Impartida por Prof. Hernandez.
+q9:ENG103 t9:impartidaPor q9:profesor4 .
+# Pertenece a la categoría de materias.
+q9:ENG103 wdt:P279 q9:materia .
+# Créditos asignados: 2.
+q9:ENG103 t9:creditos "2" .
+# Descripción.
+q9:ENG103 t9:descripcion "Ingles intermedio" .
+# Subcategoría: Inglés.
+q9:ENG103 wdt:P279 q9:ingles .
+# Tema principal: Idiomas.
+q9:ENG103 wdt:P921 q9:idiomas .
+
+# Asignatura: Estructuras de Datos y Algoritmos (CSC205)
+# CSC205 es una asignatura.
+q9:CSC205 wdt:P31 q9:asignatura .
+# Impartida por Ing. Jimenez.
+q9:CSC205 t9:impartidaPor q9:profesor5 .
+# Pertenece a la categoría de materias.
+q9:CSC205 wdt:P279 q9:materia .
+# Créditos asignados: 3.
+q9:CSC205 t9:creditos "3" .
+# Descripción.
+q9:CSC205 t9:descripcion "Estructuras de datos y algoritmos" .
+# Subcategoría: Computación.
+q9:CSC205 wdt:P279 q9:computacion .
+# Tema principal: Computación.
+q9:CSC205 wdt:P921 q9:computacion .
+
+# Asignatura: Física Moderna (PHY301)
+# PHY301 es una asignatura.
+q9:PHY301 wdt:P31 q9:asignatura .
+# Impartida por Dr. Ortiz.
+q9:PHY301 t9:impartidaPor q9:profesor6 .
+# Pertenece a la categoría de materias.
+q9:PHY301 wdt:P279 q9:materia .
+# Créditos asignados: 4.
+q9:PHY301 t9:creditos "4" .
+# Descripción.
+q9:PHY301 t9:descripcion "Fisica moderna" .
+# Subcategoría: Física.
+q9:PHY301 wdt:P279 q9:fisica .
+# Tema principal: Física.
+q9:PHY301 wdt:P921 q9:fisica .
+
+# Asignatura: Algoritmos Avanzados (CSC301)
+# CSC301 es una asignatura.
+q9:CSC301 wdt:P31 q9:asignatura .
+# Impartida por Dr. Perez.
+q9:CSC301 t9:impartidaPor q9:profesor7 .
+# Pertenece a la categoría de materias.
+q9:CSC301 wdt:P279 q9:materia .
+# Créditos asignados: 3.
+q9:CSC301 t9:creditos "3" .
+# Descripción.
+q9:CSC301 t9:descripcion "Algoritmos avanzados y teoria de la computacion" .
+# Subcategoría: Computación.
+q9:CSC301 wdt:P279 q9:computacion .
+# Tema principal: Computación.
+q9:CSC301 wdt:P921 q9:computacion .
+
+# Asignatura: Psicología Cognitiva (PSY201)
+# PSY201 es una asignatura.
+q9:PSY201 wdt:P31 q9:asignatura .
+# Impartida por Dr. Morales.
+q9:PSY201 t9:impartidaPor q9:profesor8 .
+# Pertenece a la categoría de materias.
+q9:PSY201 wdt:P279 q9:materia .
+# Créditos asignados: 3.
+q9:PSY201 t9:creditos "3" .
+# Descripción.
+q9:PSY201 t9:descripcion "Estudio de procesos cognitivos y comportamiento humano" .
+# Subcategoría: Psicología.
+q9:PSY201 wdt:P279 q9:psicologia .
+# Tema principal: Psicología.
+q9:PSY201 wdt:P921 q9:psicologia .
+
+# Asignatura: Biología Molecular (BIO301)
+# BIO301 es una asignatura.
+q9:BIO301 wdt:P31 q9:asignatura .
+# Impartida por Dra. Alvarez.
+q9:BIO301 t9:impartidaPor q9:profesor9 .
+# Pertenece a la categoría de materias.
+q9:BIO301 wdt:P279 q9:materia .
+# Créditos asignados: 4.
+q9:BIO301 t9:creditos "4" .
+# Descripción.
+q9:BIO301 t9:descripcion "Biologia molecular, genetica y biotecnologia" .
+# Subcategoría: Biología.
+q9:BIO301 wdt:P279 q9:biologia .
+# Tema principal: Biología.
+q9:BIO301 wdt:P921 q9:biologia .
+
+# Relación con otros cursos
+# Algoritmos Avanzados es pre-requisito de Estructuras de Datos y Algoritmos
+q9:CSC301 t9:preRequisito q9:CSC205 .
+# Psicología Cognitiva es un curso que puede depender de Historia Mundial
+q9:PSY201 t9:preRequisito q9:HIS202 .
+# Biología Molecular requiere conocimientos previos de Cálculo Diferencial e Integral
+q9:BIO301 t9:preRequisito q9:MTH101 .
+
+# === Profesores ===
+# Información sobre los profesores y sus especialidades.
+
+# Profesor 1: Dr. Ramirez
+# Dr. Ramirez es una persona.
+q9:profesor1 wdt:P31 q9:persona .
+# Imparte la asignatura SBC.
+q9:profesor1 t9:imparte q9:SBC .
+# Nombre del profesor.
+q9:profesor1 t9:nombre "Dr. Ramirez" .
+# Especialidad: SBC.
+q9:profesor1 wdt:P106 q9:sbc .
+
+# Profesor 2: Dra. Martinez
+# Dra. Martinez es una persona.
+q9:profesor2 wdt:P31 q9:persona .
+# Imparte la asignatura MTH101.
+q9:profesor2 t9:imparte q9:MTH101 .
+# Especialidad: Matemáticas.
+q9:profesor2 t9:especialidad q9:matematicas .
+# Nombre del profesor.
+q9:profesor2 t9:nombre "Dra. Martinez" .
+# Relación P106 más veces.
+q9:profesor2 wdt:P106 q9:matematicas .
+q9:profesor2 wdt:P106 q9:educador .
+
+# Profesor 3: Dr. Gomez
+# Dr. Gomez es una persona.
+q9:profesor3 wdt:P31 q9:persona .
+# Imparte la asignatura HIS202.
+q9:profesor3 t9:imparte q9:HIS202 .
+# Especialidad: Historia.
+q9:profesor3 t9:especialidad q9:historia .
+# Nombre del profesor.
+q9:profesor3 t9:nombre "Dr. Gomez" .
+# Relación P106 más veces.
+q9:profesor3 wdt:P106 q9:historiador .
+q9:profesor3 wdt:P106 q9:educador .
+
+# Profesor 4: Prof. Hernandez
+# Prof. Hernandez es una persona.
+q9:profesor4 wdt:P31 q9:persona .
+# Imparte la asignatura ENG103.
+q9:profesor4 t9:imparte q9:ENG103 .
+# Especialidad: Inglés.
+q9:profesor4 t9:especialidad q9:ingles .
+# Nombre del profesor.
+q9:profesor4 t9:nombre "Prof. Hernandez" .
+# Relación P106 más veces.
+q9:profesor4 wdt:P106 q9:linguista .
+q9:profesor4 wdt:P106 q9:educador .
+
+# Profesor 5: Ing. Jimenez
+# Ing. Jimenez es una persona.
+q9:profesor5 wdt:P31 q9:persona .
+# Imparte la asignatura CSC205.
+q9:profesor5 t9:imparte q9:CSC205 .
+# Especialidad: Computación.
+q9:profesor5 t9:especialidad q9:computacion .
+# Nombre del profesor.
+q9:profesor5 t9:nombre "Ing. Jimenez" .
+# Relación P106 más veces.
+q9:profesor5 wdt:P106 q9:computacion .
+q9:profesor5 wdt:P106 q9:educador .
+
+# Profesor 6: Dr. Ortiz
+# Dr. Ortiz es una persona.
+q9:profesor6 wdt:P31 q9:persona .
+# Imparte la asignatura PHY301.
+q9:profesor6 t9:imparte q9:PHY301 .
+# Especialidad: Física.
+q9:profesor6 t9:especialidad q9:fisica .
+# Nombre del profesor.
+q9:profesor6 t9:nombre "Dr. Ortiz" .
+# Relación P106 más veces.
+
+q9:profesor6 wdt:P106 q9:fisico .
+q9:profesor6 wdt:P106 q9:educador .
+
+# Profesor: Dr. Perez
+# Dr. Perez es una persona.
+q9:profesor7 wdt:P31 q9:persona .
+# Imparte la asignatura CSC301 (Algoritmos Avanzados).
+q9:profesor7 t9:imparte q9:CSC301 .
+# Especialidad: Algoritmos.
+q9:profesor7 t9:especialidad q9:algoritmos .
+# Nombre del profesor.
+q9:profesor7 t9:nombre "Dr. Perez" .
+# Relación P106 más veces.
+q9:profesor7 wdt:P106 q9:algoritmos .
+q9:profesor7 wdt:P106 q9:educador .
+
+# Profesor: Dr. Morales
+# Dr. Morales es una persona.
+q9:profesor8 wdt:P31 q9:persona .
+# Imparte la asignatura PSY201 (Psicología Cognitiva).
+q9:profesor8 t9:imparte q9:PSY201 .
+# Especialidad: Psicología Cognitiva.
+q9:profesor8 t9:especialidad q9:psicologiacognitiva .
+# Nombre del profesor.
+q9:profesor8 t9:nombre "Dr. Morales" .
+# Relación P106 más veces.
+q9:profesor8 wdt:P106 q9:psicologiacognitiva .
+q9:profesor8 wdt:P106 q9:educador .
+
+# Profesor: Dra. Alvarez
+# Dra. Alvarez es una persona.
+q9:profesor9 wdt:P31 q9:persona .
+# Imparte la asignatura BIO301 (Biología Molecular).
+q9:profesor9 t9:imparte q9:BIO301 .
+# Especialidad: Biología Molecular.
+q9:profesor9 t9:especialidad q9:biologiamolecular .
+# Nombre del profesor.
+q9:profesor9 t9:nombre "Dra. Alvarez" .
+# Relación P106 más veces.
+q9:profesor9 wdt:P106 q9:biologiamolecular .
+q9:profesor9 wdt:P106 q9:educador .
+
+# === Conceptos Educativos ===
+# Representación jerárquica de conceptos educativos y sus relaciones.
+
+# Matemáticas
+# Matemáticas es un concepto educativo.
+q9:matematicas wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Exactas.
+q9:matematicas wdt:P279 q9:cienciasExactas .
+
+# Computación
+# Computación es un concepto educativo.
+q9:computacion wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Exactas.
+q9:computacion wdt:P279 q9:cienciasExactas .
+
+# Historia
+# Historia es un concepto educativo.
+q9:historia wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Humanas.
+q9:historia wdt:P279 q9:cienciasHumanas .
+
+# Inglés
+# Inglés es un concepto educativo.
+q9:ingles wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Lenguas.
+q9:ingles wdt:P279 q9:lenguas .
+
+# Física
+# Física es un concepto educativo.
+q9:fisica wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Naturales.
+q9:fisica wdt:P279 q9:cienciasNaturales .
+
+# Ciencias Exactas
+# Ciencias Exactas es un concepto educativo.
+q9:cienciasExactas wdt:P31 q9:conceptoEducativo .
+# Categoría general.
+q9:cienciasExactas wdt:P279 q9:conceptoGeneral .
+
+# Ciencias Humanas
+# Ciencias Humanas es un concepto educativo.
+q9:cienciasHumanas wdt:P31 q9:conceptoEducativo .
+# Categoría general.
+q9:cienciasHumanas wdt:P279 q9:conceptoGeneral .
+
+# Lenguas
+# Lenguas es un concepto educativo.
+q9:lenguas wdt:P31 q9:conceptoEducativo .
+# Categoría general.
+q9:lenguas wdt:P279 q9:conceptoGeneral .
+
+# Ciencias Naturales
+# Ciencias Naturales es un concepto educativo.
+q9:cienciasNaturales wdt:P31 q9:conceptoEducativo .
+# Categoría general.
+q9:cienciasNaturales wdt:P279 q9:conceptoGeneral .
+
+# Concepto General
+# Concepto general es una entidad abstracta.
+q9:conceptoGeneral wdt:P31 q9:entidadAbstracta .
+
+# Nuevos Conceptos Educativos:
+
+# Psicología
+# Psicología es un concepto educativo.
+q9:psicologia wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Humanas.
+q9:psicologia wdt:P279 q9:cienciasHumanas .
+
+# Biología
+# Biología es un concepto educativo.
+q9:biologia wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Naturales.
+q9:biologia wdt:P279 q9:cienciasNaturales .
+
+# Filosofía
+# Filosofía es un concepto educativo.
+q9:filosofia wdt:P31 q9:conceptoEducativo .
+# Subcategoría: Ciencias Humanas.
+q9:filosofia wdt:P279 q9:cienciasHumanas .
+
+#Relaciones Wikidata: wdt:P279, wdt:P31, wdt:P106, wdt:P921, wdt:P102

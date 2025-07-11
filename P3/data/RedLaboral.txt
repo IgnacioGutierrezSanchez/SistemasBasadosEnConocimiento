@@ -1,0 +1,436 @@
+# === Personas ===
+# Información sobre las personas (empleados) y sus roles dentro de proyectos.
+
+# Persona 1: Laura Perez
+# Laura Perez tiene como instancia ser empleado.
+q9:persona1 wdt:P31 q9:empleado . 
+# Laura Perez tiene la ocupación de desarrollador.
+q9:persona1 wdt:P106 q9:desarrollador . 
+# Laura Perez tiene la habilidad de programación.
+q9:persona1 t9:habilidad q9:programacion . 
+# Laura Perez trabaja en el proyecto 1.
+q9:persona1 t9:trabajaEn q9:proyecto1 . 
+# El nombre de la persona 1 es Laura Perez.
+q9:persona1 t9:nombre "Laura Perez" . 
+# Laura Perez está ubicada en la oficina A.
+q9:persona1 wdt:P276 q9:oficinaA . 
+
+# Persona 2: Carlos Sanchez
+# Carlos Sanchez tiene como instancia ser empleado.
+q9:persona2 wdt:P31 q9:empleado . 
+# Carlos Sanchez tiene la ocupación de gestor de proyectos.
+q9:persona2 wdt:P106 q9:gestorProyectos . 
+# Carlos Sanchez tiene la habilidad de gestión de proyectos.
+q9:persona2 t9:habilidad q9:gestionProyectos . 
+# Carlos Sanchez trabaja en el proyecto 1.
+q9:persona2 t9:trabajaEn q9:proyecto1 . 
+# Carlos Sanchez supervisa a Laura Perez.
+q9:persona2 t9:supervisa q9:persona1 . 
+# El nombre de la persona 2 es Carlos Sanchez.
+q9:persona2 t9:nombre "Carlos Sanchez" . 
+# Carlos Sanchez está ubicado en la oficina B.
+q9:persona2 wdt:P276 q9:oficinaB . 
+
+# Persona 3: Ana Martinez
+# Ana Martinez tiene como instancia ser empleado.
+q9:persona3 wdt:P31 q9:empleado . 
+# Ana Martinez tiene la ocupación de analista.
+q9:persona3 wdt:P106 q9:analista . 
+# Ana Martinez tiene la habilidad de análisis de datos.
+q9:persona3 t9:habilidad q9:analisisDatos . 
+# Ana Martinez trabaja en el proyecto 2.
+q9:persona3 t9:trabajaEn q9:proyecto2 . 
+# El nombre de la persona 3 es Ana Martinez.
+q9:persona3 t9:nombre "Ana Martinez" . 
+# Ana Martinez está ubicada en la oficina B.
+q9:persona3 wdt:P276 q9:oficinaB . 
+
+# Persona 4: Ricardo Gomez
+# Ricardo Gomez tiene como instancia ser empleado.
+q9:persona4 wdt:P31 q9:empleado . 
+# Ricardo Gomez tiene la ocupación de diseñador.
+q9:persona4 wdt:P106 q9:disenador . 
+# Ricardo Gomez tiene la habilidad de diseño gráfico.
+q9:persona4 t9:habilidad q9:disenoGrafico . 
+# Ricardo Gomez trabaja en el proyecto 2.
+q9:persona4 t9:trabajaEn q9:proyecto2 . 
+# El nombre de la persona 4 es Ricardo Gomez.
+q9:persona4 t9:nombre "Ricardo Gomez" . 
+# Ricardo Gomez está ubicado en la oficina C.
+q9:persona4 wdt:P276 q9:oficinaC . 
+
+# Persona 5: Maria Torres
+# Maria Torres tiene como instancia ser empleado.
+q9:persona5 wdt:P31 q9:empleado . 
+# Maria Torres tiene la ocupación de consultor.
+q9:persona5 wdt:P106 q9:consultor . 
+# Maria Torres tiene la habilidad de consultoría.
+q9:persona5 t9:habilidad q9:consultoria . 
+# Maria Torres trabaja en el proyecto 3.
+q9:persona5 t9:trabajaEn q9:proyecto3 . 
+# El nombre de la persona 5 es Maria Torres.
+q9:persona5 t9:nombre "Maria Torres" . 
+# Maria Torres está ubicada en la oficina C.
+q9:persona5 wdt:P276 q9:oficinaC . 
+
+# Persona 6: Javier Lopez
+# Javier Lopez tiene como instancia ser empleado.
+q9:persona6 wdt:P31 q9:empleado . 
+# Javier Lopez tiene la ocupación de ingeniero de datos.
+q9:persona6 wdt:P106 q9:ingenieroDatos . 
+# Javier Lopez tiene la habilidad de ingeniería de datos.
+q9:persona6 t9:habilidad q9:ingenieriaDatos . 
+# Javier Lopez trabaja en el proyecto 3.
+q9:persona6 t9:trabajaEn q9:proyecto3 . 
+# El nombre de la persona 6 es Javier Lopez.
+q9:persona6 t9:nombre "Javier Lopez" . 
+# Javier Lopez está ubicado en la oficina A.
+q9:persona6 wdt:P276 q9:oficinaA . 
+
+# Persona 7: Isabel Ruiz
+# Isabel Ruiz tiene como instancia ser empleado.
+q9:persona7 wdt:P31 q9:empleado . 
+# Isabel Ruiz tiene la ocupación de gestor de proyectos.
+q9:persona7 wdt:P106 q9:gestorProyectos . 
+# Isabel Ruiz tiene la habilidad de gestión de proyectos.
+q9:persona7 t9:habilidad q9:gestionProyectos . 
+# Isabel Ruiz trabaja en el proyecto 2.
+q9:persona7 t9:trabajaEn q9:proyecto2 . 
+# El nombre de la persona 7 es Isabel Ruiz.
+q9:persona7 t9:nombre "Isabel Ruiz" . 
+# Isabel Ruiz está ubicada en la oficina B.
+q9:persona7 wdt:P276 q9:oficinaB . 
+
+# Persona 8: Manuel García
+# Manuel García tiene como instancia ser empleado.
+q9:persona8 wdt:P31 q9:empleado . 
+# Manuel García tiene la ocupación de analista.
+q9:persona8 wdt:P106 q9:analista . 
+# Manuel García tiene la habilidad de análisis de datos.
+q9:persona8 t9:habilidad q9:analisisDatos . 
+# Manuel García trabaja en el proyecto 1.
+q9:persona8 t9:trabajaEn q9:proyecto1 . 
+# El nombre de la persona 8 es Manuel García.
+q9:persona8 t9:nombre "Manuel Garcia" . 
+# Manuel García está ubicado en la oficina C.
+q9:persona8 wdt:P276 q9:oficinaC . 
+
+# Persona 9: Sonia Diaz
+# Sonia Diaz tiene como instancia ser empleado.
+q9:persona9 wdt:P31 q9:empleado . 
+# Sonia Diaz tiene la ocupación de desarrollador.
+q9:persona9 wdt:P106 q9:desarrollador . 
+# Sonia Diaz tiene la habilidad de programación.
+q9:persona9 t9:habilidad q9:programacion . 
+# Sonia Diaz trabaja en el proyecto 3.
+q9:persona9 t9:trabajaEn q9:proyecto3 . 
+# El nombre de la persona 9 es Sonia Diaz.
+q9:persona9 t9:nombre "Sonia Diaz" . 
+# Sonia Diaz está ubicada en la oficina A.
+q9:persona9 wdt:P276 q9:oficinaA . 
+
+# Persona 10: Pedro Martinez
+# Pedro Martinez tiene como instancia ser empleado.
+q9:persona10 wdt:P31 q9:empleado . 
+# Pedro Martinez tiene la ocupación de diseñador.
+q9:persona10 wdt:P106 q9:disenador . 
+# Pedro Martinez tiene la habilidad de diseño gráfico.
+q9:persona10 t9:habilidad q9:disenoGrafico . 
+# Pedro Martinez trabaja en el proyecto 1.
+q9:persona10 t9:trabajaEn q9:proyecto1 . 
+# El nombre de la persona 10 es Pedro Martinez.
+q9:persona10 t9:nombre "Pedro Martinez" . 
+# Pedro Martinez está ubicado en la oficina C.
+q9:persona10 wdt:P276 q9:oficinaC . 
+
+# Persona 11: Luis Fernandez
+# Luis Fernandez tiene como instancia ser empleado.
+q9:persona11 wdt:P31 q9:empleado . 
+# Luis Fernandez tiene la ocupación de tester.
+q9:persona11 wdt:P106 q9:tester . 
+# Luis Fernandez tiene la habilidad de pruebas de software.
+q9:persona11 t9:habilidad q9:pruebasSoftware . 
+# Luis Fernandez trabaja en el proyecto 4.
+q9:persona11 t9:trabajaEn q9:proyecto4 . 
+# El nombre de la persona 11 es Luis Fernandez.
+q9:persona11 t9:nombre "Luis Fernandez" . 
+# Luis Fernandez está ubicado en la oficina D.
+q9:persona11 wdt:P276 q9:oficinaD . 
+
+# === Proyectos ===
+# Información sobre los proyectos, las tareas que los componen, y las fechas.
+
+# Proyecto 1: Desarrollo de sistema de gestión de inventarios
+# El proyecto 1 tiene como instancia ser un proyecto.
+q9:proyecto1 wdt:P31 q9:proyecto . 
+# El proyecto 1 está compuesto por la tarea 1.
+q9:proyecto1 t9:compuestoPor q9:tarea1 . 
+# El proyecto 1 está compuesto por la tarea 2.
+q9:proyecto1 t9:compuestoPor q9:tarea2 . 
+# El proyecto 1 comenzó el 10 de enero de 2023.
+q9:proyecto1 t9:fechaInicio "2023-01-10" . 
+# El proyecto 1 terminó el 15 de junio de 2023.
+q9:proyecto1 t9:fechaFin "2023-06-15" . 
+# El proyecto 1 tiene como descripción "Desarrollo de sistema de gestión de inventarios".
+q9:proyecto1 t9:descripcion "Desarrollo de sistema de gestion de inventarios" . 
+# El proyecto 1 está ubicado en la ubicación A.
+q9:proyecto1 wdt:P131 q9:ubicacionA . 
+
+# Proyecto 2: Análisis de mercado y diseño gráfico de campañas
+# El proyecto 2 tiene como instancia ser un proyecto.
+q9:proyecto2 wdt:P31 q9:proyecto . 
+# El proyecto 2 está compuesto por la tarea 3.
+q9:proyecto2 t9:compuestoPor q9:tarea3 . 
+# El proyecto 2 está compuesto por la tarea 4.
+q9:proyecto2 t9:compuestoPor q9:tarea4 . 
+# El proyecto 2 comenzó el 1 de febrero de 2023.
+q9:proyecto2 t9:fechaInicio "2023-02-01" . 
+# El proyecto 2 terminó el 30 de septiembre de 2023.
+q9:proyecto2 t9:fechaFin "2023-09-30" . 
+# El proyecto 2 tiene como descripción "Análisis de mercado y diseño gráfico de campañas".
+q9:proyecto2 t9:descripcion "Analisis de mercado y diseno grafico de campanas" . 
+# El proyecto 2 está ubicado en la ubicación B.
+q9:proyecto2 wdt:P131 q9:ubicacionB . 
+
+# Proyecto 3: Consultoría en optimización de procesos
+# El proyecto 3 tiene como instancia ser un proyecto.
+q9:proyecto3 wdt:P31 q9:proyecto . 
+# El proyecto 3 está compuesto por la tarea 5.
+q9:proyecto3 t9:compuestoPor q9:tarea5 . 
+# El proyecto 3 está compuesto por la tarea 6.
+q9:proyecto3 t9:compuestoPor q9:tarea6 . 
+# El proyecto 3 comenzó el 15 de marzo de 2023.
+q9:proyecto3 t9:fechaInicio "2023-03-15" . 
+# El proyecto 3 terminó el 20 de diciembre de 2023.
+q9:proyecto3 t9:fechaFin "2023-12-20" . 
+# El proyecto 3 tiene como descripción "Consultoría en optimización de procesos".
+q9:proyecto3 t9:descripcion "Consultoria en optimizacion de procesos" . 
+# El proyecto 3 está ubicado en la ubicación C.
+q9:proyecto3 wdt:P131 q9:ubicacionC . 
+
+# Proyecto 4: Integración de sistemas de TI
+# El proyecto 4 tiene como instancia ser un proyecto.
+q9:proyecto4 wdt:P31 q9:proyecto . 
+# El proyecto 4 está compuesto por la tarea 7.
+q9:proyecto4 t9:compuestoPor q9:tarea7 . 
+# El proyecto 4 está compuesto por la tarea 8.
+q9:proyecto4 t9:compuestoPor q9:tarea8 . 
+# El proyecto 4 comenzó el 1 de julio de 2023.
+q9:proyecto4 t9:fechaInicio "2023-07-01" . 
+# El proyecto 4 terminará el 15 de febrero de 2024.
+q9:proyecto4 t9:fechaFin "2024-02-15" . 
+# El proyecto 4 tiene como descripción "Integración de sistemas de TI".
+q9:proyecto4 t9:descripcion "Integracion de sistemas de TI" . 
+# El proyecto 4 está ubicado en la ubicación D.
+q9:proyecto4 wdt:P131 q9:ubicacionD . 
+
+# Proyecto 5: Desarrollo de plataforma de comercio electrónico
+# El proyecto 5 tiene como instancia ser un proyecto.
+q9:proyecto5 wdt:P31 q9:proyecto . 
+# El proyecto 5 está compuesto por la tarea 9.
+q9:proyecto5 t9:compuestoPor q9:tarea9 . 
+# El proyecto 5 está compuesto por la tarea 10.
+q9:proyecto5 t9:compuestoPor q9:tarea10 . 
+# El proyecto 5 comenzó el 1 de septiembre de 2023.
+q9:proyecto5 t9:fechaInicio "2023-09-01" . 
+# El proyecto 5 terminará el 30 de mayo de 2024.
+q9:proyecto5 t9:fechaFin "2024-05-30" . 
+# El proyecto 5 tiene como descripción "Desarrollo de plataforma de comercio electrónico".
+q9:proyecto5 t9:descripcion "Desarrollo de plataforma de comercio electronico" . 
+# El proyecto 5 está ubicado en la ubicación E.
+q9:proyecto5 wdt:P131 q9:ubicacionE . 
+
+# === Tareas ===
+# Información sobre las tareas que componen cada proyecto, sus habilidades requeridas y descripciones.
+
+# Tarea 1: Desarrollo de funcionalidades backend
+# La tarea 1 tiene como instancia ser una tarea.
+q9:tarea1 wdt:P31 q9:tarea . 
+# La tarea 1 requiere la habilidad de programación.
+q9:tarea1 t9:requiereHabilidad q9:programacion . 
+# La tarea 1 tiene como descripción "Desarrollo de funcionalidades backend".
+q9:tarea1 t9:descripcion "Desarrollo de funcionalidades backend" . 
+
+# Tarea 2: Planificación y seguimiento del proyecto
+# La tarea 2 tiene como instancia ser una tarea.
+q9:tarea2 wdt:P31 q9:tarea . 
+# La tarea 2 requiere la habilidad de gestión de proyectos.
+q9:tarea2 t9:requiereHabilidad q9:gestionProyectos . 
+# La tarea 2 tiene como descripción "Planificación y seguimiento del proyecto".
+q9:tarea2 t9:descripcion "Planificacion y seguimiento del proyecto" . 
+
+# Tarea 3: Extracción y análisis de datos de mercado
+# La tarea 3 tiene como instancia ser una tarea.
+q9:tarea3 wdt:P31 q9:tarea . 
+# La tarea 3 requiere la habilidad de análisis de datos.
+q9:tarea3 t9:requiereHabilidad q9:analisisDatos . 
+# La tarea 3 tiene como descripción "Extracción y análisis de datos de mercado".
+q9:tarea3 t9:descripcion "Extraccion y analisis de datos de mercado" . 
+
+# Tarea 4: Creación de contenido visual para campañas
+# La tarea 4 tiene como instancia ser una tarea.
+q9:tarea4 wdt:P31 q9:tarea . 
+# La tarea 4 requiere la habilidad de diseño gráfico.
+q9:tarea4 t9:requiereHabilidad q9:diseñoGrafico . 
+# La tarea 4 tiene como descripción "Creación de contenido visual para campañas".
+q9:tarea4 t9:descripcion "Creacion de contenido visual para campanas" . 
+
+# Tarea 5: Asesoría en procesos operativos
+# La tarea 5 tiene como instancia ser una tarea.
+q9:tarea5 wdt:P31 q9:tarea . 
+# La tarea 5 requiere la habilidad de consultoría.
+q9:tarea5 t9:requiereHabilidad q9:consultoria . 
+# La tarea 5 tiene como descripción "Asesoría en procesos operativos".
+q9:tarea5 t9:descripcion "Asesoria en procesos operativos" . 
+
+# Tarea 6: Desarrollo de aplicaciones frontend
+# La tarea 6 tiene como instancia ser una tarea.
+q9:tarea6 wdt:P31 q9:tarea . 
+# La tarea 6 requiere la habilidad de programación.
+q9:tarea6 t9:requiereHabilidad q9:programacion . 
+# La tarea 6 tiene como descripción "Desarrollo de aplicaciones frontend".
+q9:tarea6 t9:descripcion "Desarrollo de aplicaciones frontend" . 
+
+# Tarea 7: Integración de sistemas backend y frontend
+# La tarea 7 tiene como instancia ser una tarea.
+q9:tarea7 wdt:P31 q9:tarea . 
+# La tarea 7 requiere la habilidad de ingeniería de datos.
+q9:tarea7 t9:requiereHabilidad q9:ingenieriaDatos . 
+# La tarea 7 tiene como descripción "Integración de sistemas backend y frontend".
+q9:tarea7 t9:descripcion "Integracion de sistemas backend y frontend" . 
+
+# Tarea 8: Pruebas de integración del sistema
+# La tarea 8 tiene como instancia ser una tarea.
+q9:tarea8 wdt:P31 q9:tarea . 
+# La tarea 8 requiere la habilidad de pruebas de software.
+q9:tarea8 t9:requiereHabilidad q9:pruebasSoftware . 
+# La tarea 8 tiene como descripción "Pruebas de integración del sistema".
+q9:tarea8 t9:descripcion "Pruebas de integracion del sistema" . 
+
+# === Roles y Habilidades ===
+# Información sobre los roles y las habilidades requeridas en los proyectos y tareas.
+
+# Rol de Desarrollador
+# El rol de desarrollador tiene como subclase el rol técnico.
+q9:desarrollador wdt:P279 q9:rolTecnico . 
+# El rol de desarrollador requiere la habilidad de programación.
+q9:desarrollador wdt:P101 q9:programacion . 
+
+# Rol de Gestor de Proyectos
+# El rol de gestor de proyectos tiene como subclase el rol administrativo.
+q9:gestorProyectos wdt:P279 q9:rolAdministrativo . 
+# El rol de gestor de proyectos requiere la habilidad de gestión de proyectos.
+q9:gestorProyectos wdt:P101 q9:gestionProyectos . 
+
+# Rol de Analista
+# El rol de analista tiene como subclase el rol técnico.
+q9:analista wdt:P279 q9:rolTecnico . 
+# El rol de analista requiere la habilidad de análisis de datos.
+q9:analista wdt:P101 q9:analisisDatos . 
+
+# Rol de Diseñador
+# El rol de diseñador tiene como subclase el rol creativo.
+q9:diseñador wdt:P279 q9:rolCreativo . 
+# El rol de diseñador requiere la habilidad de diseño gráfico.
+q9:diseñador wdt:P101 q9:disenoGrafico . 
+
+# Rol de Consultor
+# El rol de consultor tiene como subclase el rol de consultoría.
+q9:consultor wdt:P279 q9:rolConsultoria . 
+# El rol de consultor requiere la habilidad de consultoría.
+q9:consultor wdt:P101 q9:consultoria . 
+
+# Rol de Ingeniero de Datos
+# El rol de ingeniero de datos tiene como subclase el rol técnico.
+q9:ingenieroDatos wdt:P279 q9:rolTecnico . 
+# El rol de ingeniero de datos requiere la habilidad de ingeniería de datos.
+q9:ingenieroDatos wdt:P101 q9:ingenieriaDatos . 
+
+# Rol de Estratega Digital
+# El rol de estratega digital tiene como subclase el rol creativo.
+q9:estrategaDigital wdt:P279 q9:rolCreativo . 
+# El rol de estratega digital requiere la habilidad de estrategias digitales.
+q9:estrategaDigital wdt:P101 q9:estrategiasDigitales . 
+
+# Rol de Tester
+# El rol de tester tiene como subclase el rol técnico.
+q9:tester wdt:P279 q9:rolTecnico . 
+# El rol de tester requiere la habilidad de pruebas de software.
+q9:tester wdt:P101 q9:pruebasSoftware . 
+
+# Habilidad de Programación
+# La programación es una habilidad.
+q9:programacion wdt:P31 q9:habilidad . 
+
+# Habilidad de Gestión de Proyectos
+# La gestión de proyectos es una habilidad.
+q9:gestionProyectos wdt:P31 q9:habilidad . 
+
+# Habilidad de Análisis de Datos
+# El análisis de datos es una habilidad.
+q9:analisisDatos wdt:P31 q9:habilidad . 
+
+# Habilidad de Diseño Gráfico
+# El diseño gráfico es una habilidad.
+q9:disenoGrafico wdt:P31 q9:habilidad . 
+
+# Habilidad de Consultoría
+# La consultoría es una habilidad.
+q9:consultoria wdt:P31 q9:habilidad . 
+
+# Habilidad de Ingeniería de Datos
+# La ingeniería de datos es una habilidad.
+q9:ingenieriaDatos wdt:P31 q9:habilidad . 
+
+# Habilidad de Estrategias Digitales
+# Las estrategias digitales son una habilidad.
+q9:estrategiasDigitales wdt:P31 q9:habilidad . 
+
+# Habilidad de Pruebas de Software
+# Las pruebas de software son una habilidad.
+q9:pruebasSoftware wdt:P31 q9:habilidad . 
+
+# Roles Profesionales y sus Categorías
+# El rol técnico es un tipo de rol profesional.
+q9:rolTecnico wdt:P31 q9:rolProfesional . 
+# El rol técnico pertenece a la categoría de roles profesionales.
+q9:rolTecnico wdt:P279 q9:categoriaProfesional . 
+# El rol administrativo es un tipo de rol profesional.
+q9:rolAdministrativo wdt:P31 q9:rolProfesional . 
+# El rol administrativo pertenece a la categoría de roles profesionales.
+q9:rolAdministrativo wdt:P279 q9:categoriaProfesional . 
+# El rol creativo es un tipo de rol profesional.
+q9:rolCreativo wdt:P31 q9:rolProfesional . 
+# El rol creativo pertenece a la categoría de roles profesionales.
+q9:rolCreativo wdt:P279 q9:categoriaProfesional . 
+# El rol de consultoría es un tipo de rol profesional.
+q9:rolConsultoria wdt:P31 q9:rolProfesional . 
+# El rol de consultoría pertenece a la categoría de roles profesionales.
+q9:rolConsultoria wdt:P279 q9:categoriaProfesional . 
+
+# Empleado como miembro de la organización
+# Un empleado es una persona.
+q9:empleado wdt:P31 q9:persona . 
+# Un empleado pertenece a la categoría de miembros de una organización.
+q9:empleado wdt:P279 q9:miembroOrganizacion . 
+
+# Proyecto como una estructura organizacional y actividad organizacional
+# Un proyecto es una estructura organizacional.
+q9:proyecto wdt:P31 q9:estructuraOrganizacional . 
+# Un proyecto también pertenece a la categoría de actividad organizacional.
+q9:proyecto wdt:P279 q9:actividadOrganizacion . 
+
+# Entidad abstracta para estructuras organizacionales y actividades
+# Una estructura organizacional es una entidad abstracta.
+q9:estructuraOrganizacional wdt:P31 q9:entidadAbstracta . 
+# Una actividad organizacional es una entidad abstracta.
+q9:actividadOrganizacion wdt:P31 q9:entidadAbstracta . 
+
+# Relaciones adicionales que pueden existir en Wikidata para estas entidades
+# Un empleado puede estar relacionado con un proyecto en el que trabaja.
+q9:empleado t9:trabajaEn q9:proyecto . 
+# Un proyecto tiene empleados como colaboradores.
+q9:proyecto t9:colaboradores q9:empleado . 
+
+
+# Relaciones wikidata: wdt:P31, wdt:P279, wdt:P131, wdt:P101, wdt:P276, wdt:P106

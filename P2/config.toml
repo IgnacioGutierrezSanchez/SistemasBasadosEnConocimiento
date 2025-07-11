@@ -1,0 +1,7 @@
+# Configuración del motor de inferencia
+logica_difusa = "producto"  # Otras opciones: suma, producto
+
+# Configuración de rangos de respuesta
+[rangos_respuesta]
+mucho = 0.7
+algo = 0.4     

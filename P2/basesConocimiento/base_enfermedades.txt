@@ -1,0 +1,57 @@
+# Base de conocimiento para enfermedades
+
+## Enfermedades
+gripe :- fiebre, tos, dolor_cabeza [0.8] 
+gripe :- escalofrios, dolor_cabeza, malestar_general [0.9]
+faringitis :- dolor_garganta, fiebre [0.7] 
+neumonia :- fiebre, tos, dificultad_respirar, dolor_pecho [0.85] 
+covid19 :- fiebre, tos, dificultad_respirar, perdida_olfato [0.9] 
+covid19 :- fiebre, perdida_gusto, tos, dificultad_respirar [0.95]
+gastritis :- dolor_estomago, nausea, acidez [0.75] 
+migraña :- dolor_cabeza, sensibilidad_luz, nausea [0.85] 
+diabetes :- sed_excesiva, perdida_peso, fatiga [0.8]
+
+## Síntomas
+fiebre :- escalofrios, malestar_general [0.7] 
+fiebre :- sudoracion, alta_temperatura [0.8]
+tos :- irritacion_garganta, dolor_pecho [0.6] 
+tos :- sequedad_garganta, dificultad_respirar [0.7]
+dolor_cabeza :- tension_cuello, fatiga [0.7] 
+dolor_garganta :- irritacion_garganta 
+dificultad_respirar :- dolor_pecho [0.8] 
+dificultad_respirar :- congestion_pecho, fatiga [0.85]
+nausea :- mareo, vomito [0.75] 
+nausea :- dolor_estomago, perdida_apetito [0.8]
+perdida_olfato :- congestion_nasal 
+dolor_pecho :- fatiga [0.7]
+dolor_pecho :- presion_toracica
+dolor_pecho :- dificultad_respirar [0.9]
+sed_excesiva :- deshidratacion [0.8]
+
+# Propuesta de ejecución
+
+# fiebre?
+# No
+# add escalofrios [0.6]
+# print
+# gripe :- tos, dolor_cabeza [1]
+# gripe :- escalofrios, dolor_cabeza, malestar_general [0.9]
+# faringitis :- dolor_garganta, fiebre [0.7]
+# neumonia :- tos, dificultad_respirar, dolor_pecho [0.85]
+# ...
+# escalofrios [0.6]
+# add malestar_general
+# print
+# gripe :- tos, dolor_cabeza [1]
+# gripe :- escalofrios, dolor_cabeza, malestar_general [0.9]
+# faringitis :- dolor_garganta, fiebre [0.7]
+# neumonia :- tos, dificultad_respirar, dolor_pecho [0.85]
+# ...
+# escalofrios [0.6]
+# malestar_general [1.0]
+# > fiebre?
+# Reglas aplicadas para fiebre:
+# - fiebre :- escalofrios, malestar_general [0.7]
+# - fiebre :- sudoracion, alta_temperatura [0.8]
+# Si, algo (0.6)
+
